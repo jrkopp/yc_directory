@@ -19,7 +19,7 @@ const StartupForm = () => {
 
     const router = useRouter();
 
-    const handleFormSubmit = async (prevState: any, formData: FormData) => {
+    const handleFormSubmit = async (prevState: string, formData: FormData) => {
         try {
             const formValues = {
                 title: formData.get('title') as string,
@@ -75,6 +75,7 @@ const StartupForm = () => {
 
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [state, formAction, isPending] = useActionState(
         handleFormSubmit, 
         {error: "", status: "INITIAL"},

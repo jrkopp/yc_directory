@@ -4,6 +4,7 @@ export const formSchema = z.object({
     title: z.string().min(3).max(100),
     description: z.string().min(10).max(100),
     category: z.string().min(4).max(50),
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     link: z.string().url().refine( async (url) => {
         try {
             //const result = await fetch(url, {method: 'HEAD'});

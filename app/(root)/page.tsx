@@ -12,7 +12,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
 
   //const posts = await client.fetch(STARTUPS_QUERY);
 
-  const session = await auth();
+  //const session = await auth();
 
   
   const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
