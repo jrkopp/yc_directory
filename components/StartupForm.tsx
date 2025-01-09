@@ -19,7 +19,8 @@ const StartupForm = () => {
 
     const router = useRouter();
 
-    const handleFormSubmit = async (prevState: string, formData: FormData) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const handleFormSubmit = async (prevState: any, formData: FormData) => {
         try {
             const formValues = {
                 title: formData.get('title') as string,
