@@ -4,7 +4,6 @@ import { AUTHOR_BY_GITHUB_ID_QUERY } from "@/sanity/lib/queries";
 import { client } from "@/sanity/lib/client";
 import { writeClient } from "@/sanity/lib/write-client";
 
-/* eslint-disable */
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [GitHub],
   callbacks: {
@@ -51,4 +50,3 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     },
   },
 });
-/* eslint-enable */
